@@ -14,7 +14,7 @@ import org.openrdf.repository.sparql.SPARQLRepository;
 
 public class RemoteEndpointDemo {
 	public static void main(String[] args) {
-		Repository repository = new SPARQLRepository("http://bio2rdf.org/sparql");
+		Repository repository = new SPARQLRepository("http://lodlaundromat.org/sparql/");
 		repository.initialize();
 		RepositoryConnection conn = null;
 		try {
