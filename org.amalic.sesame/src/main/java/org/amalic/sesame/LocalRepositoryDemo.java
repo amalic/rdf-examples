@@ -7,7 +7,7 @@ import org.amalic.sesame.store.StoreType;
 import org.openrdf.model.IRI;
 import org.openrdf.rio.RDFFormat;
 
-public class Main {
+public class LocalRepositoryDemo {
 
 	public static void main(String[] args) {
 		SesameStore sesameStore = new SesameStore(StoreType.MEMORY_STORE, "http://amalic.org/");
