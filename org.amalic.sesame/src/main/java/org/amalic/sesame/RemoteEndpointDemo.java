@@ -21,6 +21,7 @@ public class RemoteEndpointDemo {
 			conn = repository.getConnection();
 			printQueryResult(conn, "select * where {[] a ?Concept} LIMIT 100");
 			printQueryResult(conn, "SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 100");
+			printQueryResult(conn, "SELECT DISTINCT ?properties ?classes WHERE { {[] a ?classes} UNION {[] ?properties ?x}} LIMIT 100");
 			conn.close();
 		} finally {
 			if(conn!= null && conn.isOpen())
